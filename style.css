@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0; /* Reseta Configurações */
+}
+
+.screen {
+    display: flex;
+    height: 100vh; /* Autura do Tamanho da Tela */
+}
+
+.leftside {
+    flex: 1; /* Pega o Tamanho Restante da Tela */
+    display: flex; /* Centralizar a Imagem */
+    justify-content: center;
+    align-items: center;
+}
+
+.leftside img {
+    /* width: 80%;  Largura da Imagem */
+    max-width: 500px; /* Tamanho Máximo da Imagem */
+    height: auto; /* Autura Automatica */
+}
+
+.rightside {
+    width: 400px; /* Tamanho Fixo */
+    background-color: #dddddd;
+    padding: 50px; /* Borda */
+}
+
+.rightside label {
+    display: block; /* Para Cada Item Ficar Abaixo do Outro */
+    margin-bottom: 20px; /* Distancia Abaixo */
+}
+
+.rightside input {
+    width: 100%; /* Pegar Toda largura Disponivel */
+    border: 1px solid #999999;
+    border-radius: 3px;
+    padding: 8px;
+    font-size: 14px;
+    outline: 0; /* Retira Borda do Navegador */
+}

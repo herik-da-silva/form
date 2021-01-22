@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Formulário</title>
+    <link rel="stylesheet" href="style.css" /> <!-- Importando CSS -->
+</head>
+<body>
+    <div class='screen'>
+        <div class="leftside"> <!-- Área da Esquerda -->
+            <img src="imagens/undraw_heavy_box_agqi.png" alt="" /> <!-- Colocando a Imagem -->
+        </div>
+        <div class="rightside"> <!-- Área da Direita -->
+            <h1>Crie uma conta</h1>
+
+            <form method="POST" class="validator"> <!-- Formulário -->
+                <label>
+                    Nome:<br/>
+                    <input type="text" name="name" data-rules='required' /> <!-- required Campo Obrigatório -->
+                </label>
+                <label>
+                    E-mail:<br/>
+                    <input type="text" name="email" />
+                </label>
+                <label>
+                    Senha:<br/>
+                    <input type="password" name="password" />
+                </label>
+                <label>
+                    <input type="submit" value="Cadastrar" />
+                </label>
+
+                <div>
+                    Já tem uma conta? <a href="">Faça o Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Importando JavaScript -->
+</body>
+</html>
